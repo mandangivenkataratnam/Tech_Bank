@@ -11,6 +11,8 @@ import { TransactionComponent } from './transaction/transaction.component';
 import { HistoryComponent } from './history/history.component';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ProfileComponent } from './profile/profile.component';
+import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -28,7 +30,9 @@ const routes: Routes = [
     children:[
       {path:'transfer',component:TransactionComponent},
       {path:'history',component:HistoryComponent},
-      {path:'home',component:UserhomeComponent}
+      {path:'home',component:UserhomeComponent},
+      {path:'profile',component:ProfileComponent},
+      {path:'details',component:DetailsComponent}
     ]
   }
 ];

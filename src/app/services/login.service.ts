@@ -15,4 +15,12 @@ export class LoginService {
     return this.http.post('http://localhost:4300/users/login',user,({responseType:'json'}));
   }
 
+  getUsers(userid:any){
+    return this.http.get('http://localhost:4300/users/customer/'+userid,{responseType:'json'});
+  }
+  getCustomerbyName(username:any){
+    return this.http.get('http://localhost:4300/users/customerbyName/'+username,{responseType:'json'});
+  }
+
+
 }

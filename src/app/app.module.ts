@@ -17,6 +17,8 @@ import { UserhomeComponent } from './userhome/userhome.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RegistrationComponent } from './registration/registration.component';
+import { ProfileComponent } from './profile/profile.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { RegistrationComponent } from './registration/registration.component';
     EmpdashboardComponent,
     HistoryComponent,
     UserhomeComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ProfileComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

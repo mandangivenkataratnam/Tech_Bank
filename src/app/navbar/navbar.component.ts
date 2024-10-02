@@ -30,7 +30,7 @@ export class NavbarComponent {
     }
   }
   logout(){
-    localStorage.removeItem("logeduser");
-    this.myrouter.navigateByUrl('');
+    localStorage.removeItem("loginuser");
+    this.myrouter.navigateByUrl('/login');
   }
 }

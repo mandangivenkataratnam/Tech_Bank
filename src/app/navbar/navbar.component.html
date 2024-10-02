@@ -25,7 +25,7 @@
       <ul class="list-unstyled components mb-5">
         <li class="active">
           <a
-            routerLink="/navbar/dashboard"
+            routerLink="/customer/home"
             routerLinkActive="active-link"
             [routerLinkActiveOptions]="{ exact: true }"
           >
@@ -51,7 +51,7 @@
             routerLink="/customer/history"
             routerLinkActive="active-link"
             [routerLinkActiveOptions]="{ exact: true }"
-            ><span class="fa-solid fa-file-arrow-up mr-3"></span> History</a
+            ><span class="fa-solid fa-history mr-3"></span> History</a
           >
         </li>
         <li>
@@ -59,7 +59,31 @@
               routerLink="/navbar/upload"
               routerLinkActive="active-link"
               [routerLinkActiveOptions]="{ exact: true }"
-              ><span class="fa-solid fa-bar-chart mr-3"></span> Analyze spendings</a
+              ><span class="fa-solid fa-award mr-3"></span> Rewards</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/customer/profile"
+              routerLinkActive="active-link"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ><span class="fa-solid fa-user-circle mr-3"></span> Profile</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/customer/details"
+              routerLinkActive="active-link"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ><span class="fa-solid fa-search mr-3"></span> Find Details</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink=""
+              routerLinkActive="active-link"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="logout()"><span class="fa-solid fa-sign-out mr-3"></span> Sign Out</a
             >
           </li>
       </ul>

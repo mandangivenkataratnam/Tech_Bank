@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
       <div>
-        <h1>Welcome {{ username }}</h1>
+        <h1>Welcome {{ user.name }}</h1>
         <br />
       </div>
     </div>
@@ -11,8 +11,8 @@
           <div class="card bg-c-blue order-card">
               <div class="card-block">
                   <h6 class="m-b-20">Amount</h6>
-                  <h2 class="text-right"><img src="assets/images/rupee.png" class="f-left" height="30" width="30" alt=""> <span>6000</span></h2>
-                  <p class="m-b-0" style="margin-left: 20px;">Total Spendings</p>
+                  <h2 class="text-right"><img src="assets/images/rupee.png" class="f-left" height="30" width="30" alt=""> <span>{{user.availableBalance}}</span></h2>
+                  <p class="m-b-0" style="margin-left: 20px;">Available Balance</p>
                  
               </div>
           </div>
@@ -21,9 +21,9 @@
       <div class="col-md-4 col-12 col-xl-3">
           <div class="card bg-c-green order-card">
               <div class="card-block">
-                  <h6 class="m-b-20">Cards</h6>
-                  <h2 class="text-right"> <img src="assets/images/credit.png" class="f-left" height="50" width="50" alt=""> <span>10</span></h2>
-                  <p class="m-b-0">Total Cards</p>
+                  <h6 class="m-b-20">Transactions</h6>
+                  <h2 class="text-right"> <img src="assets/images/credit.png" class="f-left" height="50" width="50" alt=""> <span>{{len}}</span></h2>
+                  <p class="m-b-0">Total No of Transactions</p>
               </div>
           </div>
       </div>
@@ -31,9 +31,9 @@
       <div class="col-md-4 col-12 col-xl-3">
           <div class="card bg-c-yellow order-card">
               <div class="card-block">
-                  <h6 class="m-b-20">Transactions</h6>
-                  <h2 class="text-right"><img src="assets/images/trans.webp" class="f-left" height="50" width="50" alt=""><span>2500</span></h2>
-                  <p class="m-b-0">Total Transactions</p>
+                  <h6 class="m-b-20">Spendings</h6>
+                  <h2 class="text-right"><img src="assets/images/trans.webp" class="f-left" height="50" width="50" alt=""><span>{{spendingstotal}}</span></h2>
+                  <p class="m-b-0">Total Spendings</p>
               </div>
           </div>
       </div>
