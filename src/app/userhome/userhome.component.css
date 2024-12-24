@@ -304,7 +304,7 @@ h5.name {
 
 
 .card {
-  border-radius: 5px;
+  border-radius: 25px;
   -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
   box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
   border: none;

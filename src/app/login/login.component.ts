@@ -50,9 +50,9 @@ data:any;loginuser:any;
       this.userinfo=res;
  
 
-        this.myrouter.navigateByUrl("/customer/home");
-        console.log(this.user);
-        console.table(this.userinfo);
+        // this.myrouter.navigateByUrl("/customer/home");
+        // console.log(this.user);
+        // console.table(this.userinfo);
       
     });
     

@@ -19,7 +19,8 @@ export class LoginService {
     return this.http.get('http://localhost:4300/users/customer/'+userid,{responseType:'json'});
   }
   getCustomerbyName(username:any){
-    return this.http.get('http://localhost:4300/users/customerbyName/'+username,{responseType:'json'});
+    console.log(username)
+    return this.http.get('http://localhost:4300/customerbyName/'+username,{responseType:'json'});
   }
 
 

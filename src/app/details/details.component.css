@@ -2,3 +2,61 @@
     color: #000 !important;
     opacity: 1;
 }
+.row {
+    margin: 20px 0; /* Space between rows */
+}
+
+.table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders for seamless look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Prevent overflow from rounded corners */
+}
+
+.table td {
+    padding: 12px 15px; /* Padding for cells */
+    font-size: 16px; /* Font size for readability */
+    font-weight: 500; /* Medium weight for better visibility */
+    text-align: left; /* Left alignment for text */
+}
+
+.table tr {
+    border-bottom: 1px solid #e0e0e0; /* Light border between rows */
+}
+
+.table tr:last-child {
+    border-bottom: none; /* Remove border for the last row */
+}
+
+.table-bordered {
+    border: 1px solid #cfd8dc; /* Border around the table */
+}
+
+.table td:nth-child(1) {
+    background-color: #4188d4; /* Blue color for label cells */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Bold text for label cells */
+    text-transform: uppercase; /* Uppercase for labels */
+}
+
+.table td:nth-child(2) {
+     /* Light blue color for value cells */
+    color: #333; /* Darker text color for value cells */
+}
+
+.table tr:hover td:nth-child(2) {
+    background-color: rgb(222, 220, 217); /* Slightly darker blue on hover for value cells */
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Space between columns */
+    }
+
+    .table td {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}

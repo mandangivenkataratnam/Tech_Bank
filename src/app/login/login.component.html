@@ -1,98 +1,74 @@
 <div class="back py-5">
-    <div class="container px-4 py-3 mx-auto">
-      <div class="card card0">
-        <div class="d-flex flex-lg-row flex-column-reverse">
-          <div class="card card2">
-            <div class="my-auto mx-md-5 px-md-5 right">
-              <div class="row justify-content-center px-3 mb-3">
-                <img
-                  class="rounded img-fluid"
-                  id="logoLeft"
-                  src="assets\banklogo.png"
-                />
-              </div>
-              <h3 class="mb-5 text-center heading text-white">
-                We are Bank
-              </h3>
-              <h3 class="text-white">We are more than just a company</h3>
-              <small class="text-white">BudgetBuddy helps you manage your spending, set limits on your cards, track your expenses, and provides insights on your spending habits. With BudgetBuddy, you can make informed financial decisions and save money more effectively.</small>
+  <div class="container px-4 py-3 mx-auto">
+    <div class="card card0">
+      <div class="d-flex flex-lg-row flex-column-reverse">
+        <div class="card card2">
+          <div class="my-auto mx-md-5 px-md-5 right">
+            <div class="row justify-content-center px-3 mb-3">
+              <img class="rounded img-fluid" id="logoLeft"
+                src="https://tse2.mm.bing.net/th?id=OIP.0tedQhMeBulqD0A0CsantAHaHa&pid=Api&P=0&h=180" />
             </div>
+            <h3 class="mb-5 text-center heading text-white">
+              Welcome to Tech Bank <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 64 64"><path fill="currentColor" d="M17 37.9h2v10h-2zm3 0h2v10h-2zm25 0h2v10h-2zm-3 0h2v10h-2z"/><path fill="currentColor" d="M62 24.051v-2.815L31.989 2L2 21.235v2.815l1.607-1.031l.879 1.313L2 25.928v1.876h1.313v1.842H2v1.877h2.82v1.95h.68v22.742h-.68v2.035H3.5v1.875H2V62h60v-1.875h-1.5V58.25h-1.32v-2.035h-.68V33.473h.68v-1.95H62v-1.877h-1.313v-1.842H62v-1.876l-2.487-1.595l.879-1.313zM31.989 4.814L59.128 22.21l-.878 1.313L31.989 6.691L5.75 23.522l-.879-1.313zm24.929 21.114H7.082L31.989 9.482zM13.5 56.215V54.5H17v-1.875h9.074v-.555h.556v-9.808c0-7.103 10.74-7.214 10.74 0v9.808h.556v.555H47V54.5h3.5v1.875h-37zM16 48.9v-12h7v12zm25 0v-12h7v12zM6.5 33.473h6v22.742h-6zm51 22.742h-6V33.473h6zm1.688-26.569H4.813v-1.842h54.375z"/><path fill="currentColor" d="M31.106 11.901v.897c-1.537.353-2.681 1.57-2.681 3.031c0 1.732 1.604 3.142 3.574 3.142c.985 0 1.787.705 1.787 1.571c0 .867-.802 1.572-1.787 1.572s-1.787-.705-1.787-1.572h-1.787c0 1.461 1.144 2.679 2.681 3.031v.897h1.787v-.897c1.537-.353 2.681-1.57 2.681-3.031c0-1.732-1.604-3.142-3.574-3.142c-.985 0-1.787-.704-1.787-1.571s.802-1.572 1.787-1.572s1.787.705 1.787 1.572h1.787c0-1.461-1.144-2.679-2.681-3.031v-.897zM7.099 34.384h.708v20.98h-.708zm4.093 0h.708v20.98h-.708zm-1.364 0h.707v20.98h-.707zm-1.364 0h.707v20.98h-.707zm43.635 0h.708v20.98h-.708zm4.093 0h.708v20.98h-.708zm-1.364 0h.707v20.98h-.707zm-1.364 0h.707v20.98h-.707zm-26.048 8.294v9.393h9.168v-9.393c0-6.711-9.168-6.609-9.168 0m4.139-3.793v3.652h-3.082c.122-2.199 1.537-3.424 3.082-3.652m.001 12.064h-3.091v-3.047h3.091zm0-4.359h-3.091v-3.047h3.091zm4.122 4.359h-3.092v-3.047h3.092zm.48-6.124v2.591h-1.296v-2.591zm-.48-.25h-1.065v2.015h-2.026v-3.047h3.092v1.032zm-3.092-2.038v-3.659c1.547.212 2.962 1.426 3.082 3.659z"/><path fill="currentColor" d="M35.695 46.467a.185.185 0 1 0-.296.149l-.077.494h.374l-.077-.494a.18.18 0 0 0 .076-.149m-.183-.435a.531.531 0 1 0-.002-1.062a.531.531 0 0 0 .002 1.062"/></svg>
+            </h3>
+            <h3 class="text-white">Empowering Your Financial Journey</h3>
+            <small class="text-white"> Tech Bank is more than just banking. We help you take control of your finances
+              with smart tools that let you track expenses, manage your budgets, and set spending limits. With
+              personalized insights and real-time monitoring, Tech Bank empowers you to make informed decisions, helping
+              you save more and spend smarter.
+            </small>
           </div>
-          <div class="card card1">
-            <div class="row justify-content-center my-auto">
-              <div class="col-md-8 col-10">
-                <h3 class="mb-5 text-center heading">We are Bank</h3>
-                <h6 class="msg-info">Please login to your account</h6>
-                <form (ngSubmit)="onLogin()" #loginForm="ngForm">
-                  <div class="form-group">
-                    <label class="form-control-label text-muted">Username</label>
-                    <input
-                      type="text"
-                      id="email"
-                      name="email"
-                      placeholder="Username or email id"
-                      class="form-control"
-                      [(ngModel)]="useremail"
-                      #emailInput="ngModel"
-                      required
-                    />
-                    <div
-                      *ngIf="
+        </div>
+        <div class="card card1">
+          <div class="row justify-content-center my-auto">
+            <div class="col-md-8 col-10">
+              <h3 class="mb-5 text-center heading fw-bold">Welcome To Tech Bank</h3>
+              <h6 class="msg-info text-white fw-bold">Access your account and manage your finances with ease</h6>
+              <br>
+              <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+                <div class="form-group">
+                  <label class="form-control-label text-white fw-bold">Username</label>
+                  <input type="text" id="email" name="email" placeholder="Username or email id" class="form-control text-black"
+                    [(ngModel)]="useremail" #emailInput="ngModel" required />
+                  <div *ngIf="
                         emailInput.invalid &&
                         (emailInput.dirty || emailInput.touched)
-                      "
-                      class="text-danger"
-                    >
-                      Username is required.
-                    </div>
+                      " class="text-danger">
+                    Username is required.
                   </div>
-  
-                  <div class="form-group">
-                    <label class="form-control-label text-muted">Password</label>
-                    <input
-                      type="password"
-                      id="psw"
-                      name="psw"
-                      placeholder="Password"
-                      class="form-control"
-                      [(ngModel)]="password"
-                      #passwordInput="ngModel"
-                      required
-                    />
-                    <div
-                      *ngIf="
+                </div>
+
+                <div class="form-group">
+                  <label class="form-control-label text-white fw-bold">Password</label>
+                  <input type="password" id="psw" name="psw" placeholder="Password" class="form-control text-black"
+                    [(ngModel)]="password" #passwordInput="ngModel" required />
+                  <div *ngIf="
                         passwordInput.invalid &&
                         (passwordInput.dirty || passwordInput.touched)
-                      "
-                      class="text-danger"
-                    >
-                      Password is required.
-                    </div>
+                      " class="text-danger">
+                    Password is required.
                   </div>
-  
-                  <div class="row justify-content-center my-3 px-3">
-                    <button
-                      class="btn-block btn-color"
-                      [disabled]="loginForm.invalid"
-                    >
-                      Login to BudgetBuddy
-                    </button>
-                  </div>
-                </form>
-              </div>
+                </div>
+                <br>
+                <div class="row justify-content-center my-3 px-3">
+                  <button class="btn-block btn-color text-white fw-bold" [disabled]="loginForm.invalid">
+                    Login to BudgetBuddy
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="bottom text-center mb-3">
-              <p class="sm-text mx-auto mb-5">
-                Don't have an account?
-                <button class="btn btn-white ml-2" routerLink="/signup">
-                  <a id="login-link">Signup</a>
-                </button>
-              </p>
-            </div>
+          </div>
+          <div class="bottom text-center mb-3">
+            <p class="sm-text mx-auto mb-5 fw-bold">
+              Don't have an account?
+              <button class="btn btn-white ml-2" routerLink="/signup">
+                <a id="login-link">Signup</a>
+              </button>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <router-outlet></router-outlet>
-  
+</div>
+<router-outlet></router-outlet>

@@ -1,9 +1,9 @@
-.back {
+/* .back {
     color: #000;
     overflow-x: hidden;
     height: 100%;
     background: linear-gradient(to right, #22263f, #114d9b);
-    /* background-repeat: no-repeat; */
+    
   }
   
   input, textarea {
@@ -162,4 +162,110 @@
         margin-top: 50px !important;
         margin-bottom: 50px !important;
     }
+  } 
+
+ */
+ .back {
+  color: white;
+  overflow-x: hidden;
+  height: 100%; /* Adjusted height */
+  background-color: #007bff; /* Blue background */
+  background-size: cover;
+}
+
+input,
+textarea {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 12px 15px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #4586a7;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+}
+
+.card1 {
+  width: 50%;
+  padding: 40px 30px;
+  background-color: #1a1a1a; /* Dark grey for sleek design */
+}
+
+.card2 {
+  width: 50%;
+  background: linear-gradient(to right, #22263f, #114d9b); /* Retain the blue gradient */
+}
+
+#logoLeft {
+  width: 70%;
+  height: 70%;
+}
+
+.heading {
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-color {
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #00aaff, #005f8f); /* Bright blue for buttons */
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-color:hover {
+  background-image: linear-gradient(to right, #005f8f, #00aaff);
+}
+
+.btn-white {
+  border-radius: 50px;
+  color: #00aaff;
+  background-color: #fff;
+  padding: 8px 40px;
+  cursor: pointer;
+  border: 2px solid #00aaff;
+}
+
+.btn-white:hover {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.sm-text {
+  font-size: 15px;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .card1,
+  .card2 {
+    width: 100%;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .card2 {
+    padding: 30px;
+  }
+}
+
+
+
+
+
+ 

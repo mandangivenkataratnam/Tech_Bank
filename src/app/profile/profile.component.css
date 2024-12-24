@@ -1,0 +1,59 @@
+.row {
+    margin: 30px 0; /* Space between rows */
+}
+
+.table {
+    width: 150%; /* Full width */
+    max-width: 1000px; /* Set maximum width for the table */
+    height: 500px; /* Set a fixed height for the table */
+    border-collapse: collapse; /* Collapse borders */
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow from rounded corners */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-right: 200px;
+}
+.co{
+    margin-left: 20%;
+}
+
+.table-bordered {
+    border: 2px solid #4188d4; /* Border color */
+}
+
+.table td {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px; /* Increased padding inside table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #e9ecef; /* Bottom border for cells */
+    color: #343a40; /* Text color */
+}
+
+.table td:first-child {
+    font-size: 20px;
+    font-weight: bold; /* Bold for labels */
+    background-color: #4188d4; /* Blue background for labels */
+    color: white; /* White text for labels */
+}
+
+.table tr:hover {
+    background-color: #e2e6ea; /* Light gray background on row hover */
+}
+
+h1 {
+    text-align: center; /* Centered heading */
+    color: #4483c6; /* Heading color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Space between columns */
+    }
+
+    .table {
+        height: auto; /* Allow height to adjust on smaller screens */
+    }
+}

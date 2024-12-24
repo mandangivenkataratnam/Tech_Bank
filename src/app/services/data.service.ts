@@ -22,4 +22,16 @@ export class DataService {
   getEarnings(userid:any){
     return this.http.get('http://localhost:4300/users/earnings/'+userid,{responseType:'json'});
   }
+  addbranch(branch:any){
+    return this.http.post('http://localhost:4300/branches',branch,({responseType:'json'}));
+  }
+  getEmployees(){
+    return this.http.get('http://localhost:4300/employees',{responseType:'json'});
+  }
+  getBranch(id:any){
+    return this.http.get('http://localhost:4300/branch/'+id,{responseType:'json'});
+  }
+  getCustomers(){
+    return this.http.get('http://localhost:4300/users/allcustomers',{responseType:'json'});
+  }
 }

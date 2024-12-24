@@ -1,0 +1,255 @@
+
+/* General Button Styling */
+.button-group {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    align-items: center; /* Center vertically */
+}
+
+.btn-spacing {
+    margin-right: 10px; /* Add space between buttons */
+}
+
+/* Button Styling */
+button {
+    border-radius: 5px;
+    padding: 12px 24px; /* Size of the buttons */
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .button-group {
+        flex-direction: row; /* Ensure buttons stay side by side on larger screens */
+    }
+
+    .btn-spacing {
+        margin-right: 5px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+
+    .btn-spacing {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 10px; /* Add space between buttons when stacked */
+    }
+
+    .btn {
+        width: 100%; /* Full-width buttons on small screens */
+    }
+}
+/* Style for the button group */
+.button-group {
+    display: flex; /* Use flexbox to arrange buttons side by side */
+    gap: 10px; /* Add space between buttons */
+}
+
+/* Optional: Button Styling */
+.btn {
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the buttons */
+    font-size: 16px; /* Font size for buttons */
+}
+
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #4784df;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Container */
+.container, .col-md-8 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Table Styles */
+.table {
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.table th {
+    background-color: #4784df; /* Teal header */
+    color: #fff;
+    text-align: center;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-hovered tbody tr:hover {
+    background-color: #e8f1ff; /* Light blue hover effect */
+}
+
+/* Button Styles */
+button {
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.btn-primary {
+    background-color: #4784df;
+    border-color: #4784df;
+}
+
+.btn-primary:hover {
+    background-color: #4784df;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-spacing {
+    margin-right: 5px;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.modal-header h3 {
+    color: #2b7a78;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #4784df;
+    box-shadow: 0 0 5px rgba(43, 122, 120, 0.2);
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-select {
+    padding: 5px;
+}
+
+/* Form Submit Buttons */
+button[type="submit"] {
+    background-color: #4784df;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4784df;
+}
+
+/* Custom Modal Styling */
+.modal-header {
+    border-bottom: none;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+}
+
+.btn-close:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.modal-footer {
+    border-top: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Form Input Styling */
+input[type="text"], input[type="email"], input[type="password"] {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 991px) {
+    .col-md-8 {
+        max-width: 100%;
+    }
+
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 0.875rem;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}

@@ -1,31 +1,35 @@
-<div class="row">
-    <div class="col-md-6">
-        <h1>Sent Transactions</h1>
-        <table class="table">
+<br><br>
+<div class="row d-flex justify-content-center">
+    <div class="col-md-9">
+        <h1 class="blinking-heading">Sent Transactions</h1>
+        <br>
+        <table class="table tab">
             <tr>
-                <td>Id</td>
-                <td>Amount</td>
-                <td>Date</td>
+                <td style="color: black; font-weight: bold; font-size:25px; background-color: #4188d4; color: white;">Id</td>
+                <td style="color: black; font-weight: bold; font-size:25px; background-color: #4188d4; color: white;">Amount</td>
+                <td style="color: black; font-weight: bold; font-size:25px; background-color: #4188d4; color: white;">Date</td>
             </tr>
             <tr *ngFor="let sp of spendings">
-                <td>{{ sp.receiverId }}</td>
-                <td>{{ sp.amount }}</td>
-                <td>{{ sp.date | date}}</td>
+                <td class="text-black fw-bold">{{ sp.receiverId }}</td>
+                <td class="text-black fw-bold">{{ sp.amount }} ₹</td>
+                <td class="text-black fw-bold">{{ sp.date | date}}</td>
             </tr>
         </table>
     </div>
-    <div class="col-md-6">
-        <h1>Received Transactions</h1>
+    <div class="col-md-9">
+        <br>
+        <h1 class="blinking-heading">Received Transactions</h1>
+        <br>
         <table class="table">
             <tr>
-                <td>Id</td>
-                <td>Amount</td>
-                <td>Date</td>
+                <td style="color: black; font-weight: bold; font-size:25px; background-color: #4188d4; color: white;">Id</td>
+                <td style="color: black; font-weight: bold; font-size:25px; background-color: #4188d4; color: white;">Amount</td>
+                <td style="color: black; font-weight: bold; font-size:25px; background-color: #4188d4; color: white;">Date</td>
             </tr>
             <tr *ngFor="let sp of earnings">
                 <td>{{ sp.senderId }}</td>
                 <td>{{ sp.amount }}</td>
-                <td>{{ sp.date | date}}</td>
+                <td>{{ sp.date | date }}</td>
             </tr>
         </table>
     </div>

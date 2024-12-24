@@ -1,0 +1,134 @@
+/* Body and Wrapper Styles */
+body {
+    background-color: #1c1c1c; /* Dark background for the overall app */
+    color: #f8f9fa; /* Light text color for contrast */
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: linear-gradient(to bottom, #333, #222); /* Sidebar gradient */
+    color: #f8f9fa;
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+#sidebar.active {
+    margin-left: -250px; /* Hide sidebar on toggle */
+}
+
+#sidebar .custom-menu {
+    padding: 10px;
+    background-color: #114d9b; /* Header background color */
+}
+
+#sidebar .custom-menu button {
+    color: #fff;
+}
+
+.img.bg-wrap {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.user-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-logo .img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px; /* Logo size */
+    height: 80px; /* Logo size */
+    border-radius: 50%; /* Circular logo */
+    margin: 0 auto;
+}
+
+.user-logo h3 {
+    margin-top: 10px;
+}
+
+/* List Styles */
+ul.components {
+    padding: 0;
+}
+
+ul.components li {
+    position: relative;
+}
+
+ul.components li a {
+    padding: 10px 15px;
+    display: block;
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+ul.components li a:hover {
+    background: #114d9b; /* Hover background color */
+}
+
+ul.components li.active a {
+    background: #0b3d8a; /* Active link background */
+}
+
+/* Icon Styles */
+.fa {
+    font-size: 18px;
+}
+
+/* Content Area */
+#content {
+    flex-grow: 1; /* Take remaining width */
+    background-color: #f3f4f6; /* Light background for content */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    #sidebar {
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    #sidebar.active {
+        margin-left: -200px; /* Adjust for smaller sidebar */
+    }
+
+    #content {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column; /* Stack the sidebar on top */
+    }
+
+    #sidebar {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    #sidebar.active {
+        margin-left: 0; /* Prevent margin shift */
+    }
+
+    #content {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .user-logo h3 {
+        font-size: 18px; /* Smaller text on mobile */
+    }
+}

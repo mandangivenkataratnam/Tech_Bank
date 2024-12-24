@@ -12,7 +12,7 @@
   
       /* Hero Section */
       .middle {
-        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/023/221/109/small/banking-and-finance-concept-digital-connect-system-financial-and-banking-technology-with-integrated-circles-glowing-line-icons-and-on-blue-background-design-vector.jpg');
+        background-image: url('https://img.freepik.com/premium-photo/digital-banking-transformation-with-modern-financial-services-smartphone_328146-5464.jpg');
         background-size: cover;
         background-position: center;
         color: white;
@@ -115,4 +115,59 @@
     animation: rotBGimg 3.5s linear infinite;
   } */
   
+  
+  .services {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .services h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #22263f;
+  }
+  
+  .service-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 50px;
+    color: #114d9b;
+    margin-bottom: 15px;
+  }
+  
+  .service-box h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #22263f;
+  }
+  
+  .service-box p {
+    color: #6c757d;
+    font-size: 1em;
+  }
+  
+  .btn-primary {
+    background-color: #114d9b;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #22263f;
+  }
   

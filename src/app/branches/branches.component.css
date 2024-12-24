@@ -1,0 +1,131 @@
+
+.br{
+    position: relative;
+    left:700px;
+    top:-50px;
+}
+::placeholder{
+    color: rgb(64, 62, 62);
+    
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Light background for the entire page */
+}
+
+.container {
+    max-width: 1200px; /* Limits the container width for better readability */
+}
+
+h1, h3 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.im{
+    height: 50%;
+    width: 80%;
+    margin-top: 180px;
+    margin-left: 60px;
+    border-radius: 20px;
+   
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Table Styles */
+.table {
+    background-color: #ffffff;
+}
+
+.table th {
+    background-color: #10438f; /* Blue header for table */
+    color: #fff;
+    text-align: center;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e8f1ff; /* Light blue hover effect */
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Form Styles */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the card */
+    border-radius: 8px; /* Smooth card edges */
+}
+
+form h3 img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #286ed6;
+    box-shadow: 0 0 5px rgba(40, 110, 214, 0.2); /* Focus outline */
+}
+
+/* Button Styles */
+button {
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #286ed6;
+    border-color: #286ed6;
+}
+
+.btn-primary:hover {
+    background-color: #1e5bb8;
+    border-color: #1e5bb8;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .col-lg-6 {
+        max-width: 100%;
+    }
+}

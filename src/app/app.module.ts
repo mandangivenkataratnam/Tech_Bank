@@ -19,6 +19,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DetailsComponent } from './details/details.component';
+import { EmphomeComponent } from './emphome/emphome.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +37,12 @@ import { DetailsComponent } from './details/details.component';
     UserhomeComponent,
     RegistrationComponent,
     ProfileComponent,
-    DetailsComponent
+    DetailsComponent,
+    EmphomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule,HttpClientModule
+    AppRoutingModule, FormsModule,HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

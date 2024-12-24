@@ -44,9 +44,7 @@ export class RegistrationComponent {
 
       this.db.signup(this.user).subscribe(
         (res: any) => {
-          alert(res.message); // Display the message property from the response
-          //localStorage.setItem("loginuser", JSON.stringify(this.user));
-          // Redirect or perform other actions on successful registration
+          alert(res.message);
           this.myrouter.navigateByUrl("/login");
         },
         (error) => {
